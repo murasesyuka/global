@@ -35,3 +35,13 @@ libtool
 libutil/Makefile
 plugin-factory/Makefile
 script/Makefile
+
+
+
+global/global
+globash/globash
+gozilla/gozilla
+gtags-cscope/gtags-cscope
+gtags/gtags
+htags/htags
+plugin-factory/.libs/
