@@ -104,3 +104,74 @@ while			word
 #unassert		sharp
 #undef			sharp
 #warning		sharp
+
+;
+; CUDA reserved word list.
+;
+;; http://vim.cybermirror.org/runtime/syntax/cuda.vim
+;;
+__device__		word
+__global__		word
+__host__		word
+
+__constant__		word
+__shared__		word
+
+__inline__		word
+__align__		word
+__thread__		word
+
+__import__		word
+__export__		word
+__location__		word
+
+char1			word
+char2			word
+char3			word
+char4			word
+uchar1			word
+uchar2			word
+uchar3			word
+uchar4			word
+short1			word
+short2			word
+short3			word
+short4			word
+ushort1			word
+ushort2			word
+ushort3			word
+ushort4			word
+int1			word
+int2			word
+int3			word
+int4			word
+uint1			word
+uint2			word
+uint3			word
+uint4			word
+long1			word
+long2			word
+long3			word
+long4			word
+ulong1			word
+ulong2			word
+ulong3			word
+ulong4			word
+float1			word
+float2			word
+float3			word
+float4			word
+ufloat1			word
+ufloat2			word
+ufloat3			word
+ufloat4			word
+dim3			word
+texture			word
+textureReference	word
+cudaError_t		word
+cudaDeviceProp		word
+cudaMemcpyKind		word
+cudaArray		word
+cudaChannelFormatKind	word
+cudaChannelFormatDesc	word
+udaTextureAddressMode	word
