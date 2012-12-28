@@ -1,6 +1,6 @@
 /* ANSI-C code produced by gperf version 3.0.4 */
 /* Command-line: gperf --language=ANSI-C --struct-type --slot-name=name --hash-fn-name=cpp_hash --lookup-fn-name=cpp_lookup  */
-/* Computed positions: -k'2-4' */
+/* Computed positions: -k'1,3,5,$' */
 
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
       && ('%' == 37) && ('&' == 38) && ('\'' == 39) && ('(' == 40) \
@@ -128,14 +128,74 @@
 #define SHARP_UNASSERT	3018
 #define SHARP_UNDEF	3019
 #define SHARP_WARNING	3020
+#define CPP___DEVICE__	2069
+#define CPP___GLOBAL__	2070
+#define CPP___HOST__	2071
+#define CPP___CONSTANT__	2072
+#define CPP___SHARED__	2073
+#define CPP___ALIGN__	2074
+#define CPP___THREAD__	2075
+#define CPP___IMPORT__	2076
+#define CPP___EXPORT__	2077
+#define CPP___LOCATION__	2078
+#define CPP_CHAR1	2079
+#define CPP_CHAR2	2080
+#define CPP_CHAR3	2081
+#define CPP_CHAR4	2082
+#define CPP_UCHAR1	2083
+#define CPP_UCHAR2	2084
+#define CPP_UCHAR3	2085
+#define CPP_UCHAR4	2086
+#define CPP_SHORT1	2087
+#define CPP_SHORT2	2088
+#define CPP_SHORT3	2089
+#define CPP_SHORT4	2090
+#define CPP_USHORT1	2091
+#define CPP_USHORT2	2092
+#define CPP_USHORT3	2093
+#define CPP_USHORT4	2094
+#define CPP_INT1	2095
+#define CPP_INT2	2096
+#define CPP_INT3	2097
+#define CPP_INT4	2098
+#define CPP_UINT1	2099
+#define CPP_UINT2	2100
+#define CPP_UINT3	2101
+#define CPP_UINT4	2102
+#define CPP_LONG1	2103
+#define CPP_LONG2	2104
+#define CPP_LONG3	2105
+#define CPP_LONG4	2106
+#define CPP_ULONG1	2107
+#define CPP_ULONG2	2108
+#define CPP_ULONG3	2109
+#define CPP_ULONG4	2110
+#define CPP_FLOAT1	2111
+#define CPP_FLOAT2	2112
+#define CPP_FLOAT3	2113
+#define CPP_FLOAT4	2114
+#define CPP_UFLOAT1	2115
+#define CPP_UFLOAT2	2116
+#define CPP_UFLOAT3	2117
+#define CPP_UFLOAT4	2118
+#define CPP_DIM3	2119
+#define CPP_TEXTURE	2120
+#define CPP_TEXTUREREFERENCE	2121
+#define CPP_CUDAERROR_T	2122
+#define CPP_CUDADEVICEPROP	2123
+#define CPP_CUDAMEMCPYKIND	2124
+#define CPP_CUDAARRAY	2125
+#define CPP_CUDACHANNELFORMATKIND	2126
+#define CPP_CUDACHANNELFORMATDESC	2127
+#define CPP_UDATEXTUREADDRESSMODE	2128
 struct keyword { char *name; int token; };
 
-#define TOTAL_KEYWORDS 99
+#define TOTAL_KEYWORDS 159
 #define MIN_WORD_LENGTH 2
-#define MAX_WORD_LENGTH 16
+#define MAX_WORD_LENGTH 21
 #define MIN_HASH_VALUE 2
-#define MAX_HASH_VALUE 242
-/* maximum key range = 241, duplicates = 0 */
+#define MAX_HASH_VALUE 458
+/* maximum key range = 457, duplicates = 0 */
 
 #ifdef __GNUC__
 __inline
@@ -147,50 +207,52 @@ inline
 static unsigned int
 cpp_hash (register const char *str, register unsigned int len)
 {
-  static unsigned char asso_values[] =
+  static unsigned short asso_values[] =
     {
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243,  10, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243,   0, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243,  45, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243,   5, 243,  10,  15,  35,
-       45,  25,  95,  70,  35,  15,  65, 243,  70,  20,
-        0,   5,  60,  15,   5,   0,   0,  10,  90,  80,
-       20,  80,  30,  40, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243, 243, 243, 243,
-      243, 243, 243, 243, 243, 243, 243
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459,  25, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 145,
+      105,  60,  80, 459, 459, 459, 459, 459,   0, 459,
+      459, 459, 459, 459, 459,  10, 459,  15,   0,   0,
+      459, 459, 459, 459, 459, 459, 459,   5, 459, 459,
+        0, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459,  30, 459,  30,  45,  50,
+      105,   0,   5,  40,  95,  10, 459,   0,  15, 105,
+        0, 105, 239, 459,  55,   0,   5,  20,  95,   5,
+       40,   0,  20, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459, 459, 459, 459, 459,
+      459, 459, 459, 459, 459, 459
     };
   register int hval = len;
 
   switch (hval)
     {
       default:
-        hval += asso_values[(unsigned char)str[3]];
+        hval += asso_values[(unsigned char)str[4]];
       /*FALLTHROUGH*/
+      case 4:
       case 3:
-        hval += asso_values[(unsigned char)str[2]+1];
+        hval += asso_values[(unsigned char)str[2]];
       /*FALLTHROUGH*/
       case 2:
-        hval += asso_values[(unsigned char)str[1]];
+      case 1:
+        hval += asso_values[(unsigned char)str[0]];
         break;
     }
-  return hval;
+  return hval + asso_values[(unsigned char)str[len - 1]];
 }
 
 #ifdef __GNUC__
@@ -206,146 +268,257 @@ cpp_lookup (register const char *str, register unsigned int len)
     {
       {""}, {""},
       {"::", CPP_WCOLON},
-      {"asm", CPP_ASM},
+      {""},
+      {"else", CPP_ELSE},
       {""}, {""}, {""},
-      {"do", CPP_DO},
-      {"for", CPP_FOR},
-      {""}, {""}, {""},
-      {"##", SHARP_SHARP},
-      {"int", CPP_INT},
-      {""},
-      {"const", CPP_CONST},
-      {"struct", CPP_STRUCT},
-      {"#assert", SHARP_ASSERT},
-      {"continue", CPP_CONTINUE},
-      {""},
-      {"const_cast", CPP_CONST_CAST},
-      {"static", CPP_STATIC},
-      {"virtual", CPP_VIRTUAL},
-      {"unsigned", CPP_UNSIGNED},
-      {"goto", CPP_GOTO},
-      {"__asm", CPP_ASM},
-      {"static_cast", CPP_STATIC_CAST},
-      {"__asm__", CPP_ASM},
-      {"__signed", CPP_SIGNED},
-      {"auto", CPP_AUTO},
-      {"__signed__", CPP_SIGNED},
-      {"__attribute", CPP___ATTRIBUTE__},
-      {""},
-      {"__attribute__", CPP___ATTRIBUTE__},
-      {"#unassert", SHARP_UNASSERT},
-      {"false", CPP_FALSE},
-      {"#error", SHARP_ERROR},
-      {"mutable", CPP_MUTABLE},
       {"try", CPP_TRY},
-      {"case", CPP_CASE},
-      {""},
-      {"inline", CPP_INLINE},
-      {""},
-      {"volatile", CPP_VOLATILE},
-      {"namespace", CPP_NAMESPACE},
-      {"throw", CPP_THROW},
-      {"export", CPP_EXPORT},
-      {""},
+      {""}, {""}, {""}, {""},
       {"new", CPP_NEW},
-      {""},
-      {"#else", SHARP_ELSE},
-      {"return", CPP_RETURN},
-      {""},
-      {"__P", CPP___P},
-      {""}, {""},
-      {"signed", CPP_SIGNED},
-      {""},
-      {"__thread", CPP___THREAD},
-      {"char", CPP_CHAR},
-      {"catch", CPP_CATCH},
-      {"extern", CPP_EXTERN},
-      {"__const", CPP_CONST},
-      {"#include", SHARP_INCLUDE},
-      {"__const__", CPP_CONST},
-      {"#elif", SHARP_ELIF},
-      {"#undef", SHARP_UNDEF},
-      {"wchar_t", CPP_WCHAR_T},
-      {"#include_next", SHARP_INCLUDE_NEXT},
-      {""},
-      {"using", CPP_USING},
-      {"#ident", SHARP_IDENT},
-      {""}, {""},
-      {"protected", CPP_PROTECTED},
-      {"union", CPP_UNION},
-      {"delete", CPP_DELETE},
-      {"#pragma", SHARP_PRAGMA},
-      {"__inline", CPP_INLINE},
-      {""},
-      {"__inline__", CPP_INLINE},
-      {"#endif", SHARP_ENDIF},
-      {"#import", SHARP_IMPORT},
-      {"register", CPP_REGISTER},
-      {"long", CPP_LONG},
-      {"#sccs", SHARP_SCCS},
-      {"sizeof", CPP_SIZEOF},
-      {""},
-      {"#if", SHARP_IF},
-      {""},
-      {"class", CPP_CLASS},
-      {""},
-      {"#ifndef", SHARP_IFNDEF},
-      {"template", CPP_TEMPLATE},
       {""}, {""}, {""},
       {"if", CPP_IF},
       {""},
-      {"else", CPP_ELSE},
-      {"__volatile", CPP_VOLATILE},
-      {"friend", CPP_FRIEND},
-      {"__volatile__", CPP_VOLATILE},
-      {""},
       {"this", CPP_THIS},
-      {"short", CPP_SHORT},
-      {"reinterpret_cast", CPP_REINTERPRET_CAST},
-      {"dynamic_cast", CPP_DYNAMIC_CAST},
-      {"#warning", SHARP_WARNING},
-      {""}, {""}, {""},
-      {"default", CPP_DEFAULT},
-      {"explicit", CPP_EXPLICIT},
-      {"enum", CPP_ENUM},
-      {"break", CPP_BREAK},
-      {"double", CPP_DOUBLE},
+      {"while", CPP_WHILE},
       {""}, {""},
-      {"void", CPP_VOID},
+      {"int", CPP_INT},
       {""},
-      {"public", CPP_PUBLIC},
-      {""}, {""},
+      {"false", CPP_FALSE},
+      {""}, {""}, {""},
       {"true", CPP_TRUE},
       {""},
-      {"typeid", CPP_TYPEID},
-      {"typedef", CPP_TYPEDEF},
-      {"typename", CPP_TYPENAME},
-      {""}, {""}, {""}, {""},
-      {"__extension__", CPP___EXTENSION__},
-      {""}, {""},
-      {"#ifdef", SHARP_IFDEF},
-      {""}, {""},
-      {"bool", CPP_BOOL},
+      {"inline", CPP_INLINE},
+      {""},
+      {"__P", CPP___P},
+      {""},
+      {"union", CPP_UNION},
+      {"#undef", SHARP_UNDEF},
+      {"#assert", SHARP_ASSERT},
+      {"#if", SHARP_IF},
+      {"#unassert", SHARP_UNASSERT},
       {"#line", SHARP_LINE},
-      {""}, {""}, {""}, {""},
-      {"float", CPP_FLOAT},
-      {""}, {""}, {""}, {""}, {""},
-      {"switch", CPP_SWITCH},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""},
-      {"private", CPP_PRIVATE},
-      {"operator", CPP_OPERATOR},
-      {""}, {""}, {""}, {""}, {""}, {""},
-      {"while", CPP_WHILE},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
-      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {"#ifdef", SHARP_IFDEF},
+      {"#define", SHARP_DEFINE},
+      {""}, {""},
+      {"#else", SHARP_ELSE},
+      {"#endif", SHARP_ENDIF},
+      {""},
+      {"#include", SHARP_INCLUDE},
+      {""},
+      {"break", CPP_BREAK},
+      {""},
+      {"##", SHARP_SHARP},
+      {""},
+      {"case", CPP_CASE},
+      {"#elif", SHARP_ELIF},
+      {"static_cast", CPP_STATIC_CAST},
+      {""},
+      {"#include_next", SHARP_INCLUDE_NEXT},
+      {"long", CPP_LONG},
       {""}, {""}, {""},
-      {"#define", SHARP_DEFINE}
+      {"__inline", CPP_INLINE},
+      {""},
+      {"const", CPP_CONST},
+      {"extern", CPP_EXTERN},
+      {""},
+      {"continue", CPP_CONTINUE},
+      {""},
+      {"const_cast", CPP_CONST_CAST},
+      {"udaTextureAddressMode", CPP_UDATEXTUREADDRESSMODE},
+      {"texture", CPP_TEXTURE},
+      {""}, {""},
+      {"throw", CPP_THROW},
+      {"__attribute", CPP___ATTRIBUTE__},
+      {""},
+      {"__extension__", CPP___EXTENSION__},
+      {"int3", CPP_INT3},
+      {"#sccs", SHARP_SCCS},
+      {"textureReference", CPP_TEXTUREREFERENCE},
+      {""}, {""}, {""},
+      {"class", CPP_CLASS},
+      {""}, {""}, {""}, {""}, {""},
+      {"reinterpret_cast", CPP_REINTERPRET_CAST},
+      {"__const", CPP_CONST},
+      {""}, {""},
+      {"__inline__", CPP_INLINE},
+      {"static", CPP_STATIC},
+      {""}, {""},
+      {"int4", CPP_INT4},
+      {"__shared__", CPP___SHARED__},
+      {""}, {""},
+      {"#warning", SHARP_WARNING},
+      {""}, {""}, {""}, {""},
+      {"__attribute__", CPP___ATTRIBUTE__},
+      {"__align__", CPP___ALIGN__},
+      {"__signed__", CPP_SIGNED},
+      {""}, {""}, {""},
+      {"namespace", CPP_NAMESPACE},
+      {"using", CPP_USING},
+      {"struct", CPP_STRUCT},
+      {""},
+      {"for", CPP_FOR},
+      {"__const__", CPP_CONST},
+      {"short", CPP_SHORT},
+      {"return", CPP_RETURN},
+      {"__constant__", CPP___CONSTANT__},
+      {"volatile", CPP_VOLATILE},
+      {"int2", CPP_INT2},
+      {"float", CPP_FLOAT},
+      {"friend", CPP_FRIEND},
+      {""}, {""},
+      {"enum", CPP_ENUM},
+      {"__thread__", CPP___THREAD__},
+      {"delete", CPP_DELETE},
+      {"ufloat3", CPP_UFLOAT3},
+      {"template", CPP_TEMPLATE},
+      {""}, {""},
+      {"sizeof", CPP_SIZEOF},
+      {"__location__", CPP___LOCATION__},
+      {""},
+      {"char", CPP_CHAR},
+      {"long3", CPP_LONG3},
+      {"#ident", SHARP_IDENT},
+      {"default", CPP_DEFAULT},
+      {""},
+      {"auto", CPP_AUTO},
+      {"uint3", CPP_UINT3},
+      {"double", CPP_DOUBLE},
+      {"#ifndef", SHARP_IFNDEF},
+      {""}, {""},
+      {"__volatile", CPP_VOLATILE},
+      {"signed", CPP_SIGNED},
+      {"ufloat4", CPP_UFLOAT4},
+      {""},
+      {"goto", CPP_GOTO},
+      {""}, {""},
+      {"#pragma", SHARP_PRAGMA},
+      {"register", CPP_REGISTER},
+      {""}, {""},
+      {"switch", CPP_SWITCH},
+      {"mutable", CPP_MUTABLE},
+      {"__host__", CPP___HOST__},
+      {"int1", CPP_INT1},
+      {""}, {""},
+      {"wchar_t", CPP_WCHAR_T},
+      {""},
+      {"bool", CPP_BOOL},
+      {""},
+      {"cudaError_t", CPP_CUDAERROR_T},
+      {""},
+      {"unsigned", CPP_UNSIGNED},
+      {"cudaArray", CPP_CUDAARRAY},
+      {""},
+      {"short3", CPP_SHORT3},
+      {"ufloat2", CPP_UFLOAT2},
+      {""}, {""},
+      {"long4", CPP_LONG4},
+      {"float3", CPP_FLOAT3},
+      {"__volatile__", CPP_VOLATILE},
+      {"__signed", CPP_SIGNED},
+      {""},
+      {"uint4", CPP_UINT4},
+      {""}, {""}, {""}, {""}, {""}, {""},
+      {"virtual", CPP_VIRTUAL},
+      {""}, {""}, {""},
+      {"short4", CPP_SHORT4},
+      {""},
+      {"operator", CPP_OPERATOR},
+      {""}, {""},
+      {"float4", CPP_FLOAT4},
+      {"__asm__", CPP_ASM},
+      {"__thread", CPP___THREAD},
+      {""},
+      {"char3", CPP_CHAR3},
+      {""}, {""}, {""}, {""}, {""}, {""},
+      {"do", CPP_DO},
+      {""},
+      {"void", CPP_VOID},
+      {"__global__", CPP___GLOBAL__},
+      {""},
+      {"ufloat1", CPP_UFLOAT1},
+      {""}, {""}, {""},
+      {"short2", CPP_SHORT2},
+      {""}, {""}, {""}, {""},
+      {"float2", CPP_FLOAT2},
+      {"dynamic_cast", CPP_DYNAMIC_CAST},
+      {""}, {""},
+      {"long2", CPP_LONG2},
+      {"ulong3", CPP_ULONG3},
+      {""}, {""}, {""},
+      {"uint2", CPP_UINT2},
+      {"uchar3", CPP_UCHAR3},
+      {"ushort3", CPP_USHORT3},
+      {""}, {""}, {""},
+      {"cudaChannelFormatDesc", CPP_CUDACHANNELFORMATDESC},
+      {""},
+      {"asm", CPP_ASM},
+      {""},
+      {"char4", CPP_CHAR4},
+      {"#error", SHARP_ERROR},
+      {"#import", SHARP_IMPORT},
+      {""}, {""},
+      {"catch", CPP_CATCH},
+      {"ulong4", CPP_ULONG4},
+      {"typename", CPP_TYPENAME},
+      {""}, {""}, {""},
+      {"uchar4", CPP_UCHAR4},
+      {"ushort4", CPP_USHORT4},
+      {""}, {""}, {""},
+      {"short1", CPP_SHORT1},
+      {"explicit", CPP_EXPLICIT},
+      {""}, {""}, {""},
+      {"float1", CPP_FLOAT1},
+      {""}, {""}, {""},
+      {"__device__", CPP___DEVICE__},
+      {""}, {""}, {""},
+      {"dim3", CPP_DIM3},
+      {"__asm", CPP_ASM},
+      {"ulong2", CPP_ULONG2},
+      {""}, {""},
+      {"cudaMemcpyKind", CPP_CUDAMEMCPYKIND},
+      {""},
+      {"uchar2", CPP_UCHAR2},
+      {"ushort2", CPP_USHORT2},
+      {""}, {""}, {""},
+      {"private", CPP_PRIVATE},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {"char2", CPP_CHAR2},
+      {"cudaChannelFormatKind", CPP_CUDACHANNELFORMATKIND},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {"export", CPP_EXPORT},
+      {""}, {""}, {""},
+      {"__export__", CPP___EXPORT__},
+      {"long1", CPP_LONG1},
+      {""}, {""}, {""}, {""},
+      {"uint1", CPP_UINT1},
+      {"ulong1", CPP_ULONG1},
+      {""}, {""},
+      {"__import__", CPP___IMPORT__},
+      {""},
+      {"uchar1", CPP_UCHAR1},
+      {"ushort1", CPP_USHORT1},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {"public", CPP_PUBLIC},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""},
+      {"typedef", CPP_TYPEDEF},
+      {""}, {""}, {""},
+      {"typeid", CPP_TYPEID},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {"char1", CPP_CHAR1},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""},
+      {"cudaDeviceProp", CPP_CUDADEVICEPROP},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
+      {""}, {""}, {""}, {""},
+      {"protected", CPP_PROTECTED}
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
