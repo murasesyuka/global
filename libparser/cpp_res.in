@@ -117,7 +117,7 @@ __host__		word
 __constant__		word
 __shared__		word
 
-__inline__		word
+;;__inline__		word
 __align__		word
 __thread__		word
 
