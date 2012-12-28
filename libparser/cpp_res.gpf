@@ -97,6 +97,67 @@
 #define SHARP_UNASSERT	3018
 #define SHARP_UNDEF	3019
 #define SHARP_WARNING	3020
+#define CPP___DEVICE__	2069
+#define CPP___GLOBAL__	2070
+#define CPP___HOST__	2071
+#define CPP___CONSTANT__	2072
+#define CPP___SHARED__	2073
+#define CPP___INLINE__	2074
+#define CPP___ALIGN__	2075
+#define CPP___THREAD__	2076
+#define CPP___IMPORT__	2077
+#define CPP___EXPORT__	2078
+#define CPP___LOCATION__	2079
+#define CPP_CHAR1	2080
+#define CPP_CHAR2	2081
+#define CPP_CHAR3	2082
+#define CPP_CHAR4	2083
+#define CPP_UCHAR1	2084
+#define CPP_UCHAR2	2085
+#define CPP_UCHAR3	2086
+#define CPP_UCHAR4	2087
+#define CPP_SHORT1	2088
+#define CPP_SHORT2	2089
+#define CPP_SHORT3	2090
+#define CPP_SHORT4	2091
+#define CPP_USHORT1	2092
+#define CPP_USHORT2	2093
+#define CPP_USHORT3	2094
+#define CPP_USHORT4	2095
+#define CPP_INT1	2096
+#define CPP_INT2	2097
+#define CPP_INT3	2098
+#define CPP_INT4	2099
+#define CPP_UINT1	2100
+#define CPP_UINT2	2101
+#define CPP_UINT3	2102
+#define CPP_UINT4	2103
+#define CPP_LONG1	2104
+#define CPP_LONG2	2105
+#define CPP_LONG3	2106
+#define CPP_LONG4	2107
+#define CPP_ULONG1	2108
+#define CPP_ULONG2	2109
+#define CPP_ULONG3	2110
+#define CPP_ULONG4	2111
+#define CPP_FLOAT1	2112
+#define CPP_FLOAT2	2113
+#define CPP_FLOAT3	2114
+#define CPP_FLOAT4	2115
+#define CPP_UFLOAT1	2116
+#define CPP_UFLOAT2	2117
+#define CPP_UFLOAT3	2118
+#define CPP_UFLOAT4	2119
+#define CPP_DIM3	2120
+#define CPP_TEXTURE	2121
+#define CPP_TEXTUREREFERENCE	2122
+#define CPP_CUDAERROR_T	2123
+#define CPP_CUDADEVICEPROP	2124
+#define CPP_CUDAMEMCPYKIND	2125
+#define CPP_CUDAARRAY	2126
+#define CPP_CUDACHANNELFORMATKIND	2127
+#define CPP_CUDACHANNELFORMATDESC	2128
+#define CPP_UDATEXTUREADDRESSMODE	2129
 %}
 struct keyword { char *name; int token; }
 %%
@@ -199,6 +260,67 @@ while, CPP_WHILE
 "#unassert", SHARP_UNASSERT
 "#undef", SHARP_UNDEF
 "#warning", SHARP_WARNING
+__device__, CPP___DEVICE__
+__global__, CPP___GLOBAL__
+__host__, CPP___HOST__
+__constant__, CPP___CONSTANT__
+__shared__, CPP___SHARED__
+__inline__, CPP___INLINE__
+__align__, CPP___ALIGN__
+__thread__, CPP___THREAD__
+__import__, CPP___IMPORT__
+__export__, CPP___EXPORT__
+__location__, CPP___LOCATION__
+char1, CPP_CHAR1
+char2, CPP_CHAR2
+char3, CPP_CHAR3
+char4, CPP_CHAR4
+uchar1, CPP_UCHAR1
+uchar2, CPP_UCHAR2
+uchar3, CPP_UCHAR3
+uchar4, CPP_UCHAR4
+short1, CPP_SHORT1
+short2, CPP_SHORT2
+short3, CPP_SHORT3
+short4, CPP_SHORT4
+ushort1, CPP_USHORT1
+ushort2, CPP_USHORT2
+ushort3, CPP_USHORT3
+ushort4, CPP_USHORT4
+int1, CPP_INT1
+int2, CPP_INT2
+int3, CPP_INT3
+int4, CPP_INT4
+uint1, CPP_UINT1
+uint2, CPP_UINT2
+uint3, CPP_UINT3
+uint4, CPP_UINT4
+long1, CPP_LONG1
+long2, CPP_LONG2
+long3, CPP_LONG3
+long4, CPP_LONG4
+ulong1, CPP_ULONG1
+ulong2, CPP_ULONG2
+ulong3, CPP_ULONG3
+ulong4, CPP_ULONG4
+float1, CPP_FLOAT1
+float2, CPP_FLOAT2
+float3, CPP_FLOAT3
+float4, CPP_FLOAT4
+ufloat1, CPP_UFLOAT1
+ufloat2, CPP_UFLOAT2
+ufloat3, CPP_UFLOAT3
+ufloat4, CPP_UFLOAT4
+dim3, CPP_DIM3
+texture, CPP_TEXTURE
+textureReference, CPP_TEXTUREREFERENCE
+cudaError_t, CPP_CUDAERROR_T
+cudaDeviceProp, CPP_CUDADEVICEPROP
+cudaMemcpyKind, CPP_CUDAMEMCPYKIND
+cudaArray, CPP_CUDAARRAY
+cudaChannelFormatKind, CPP_CUDACHANNELFORMATKIND
+cudaChannelFormatDesc, CPP_CUDACHANNELFORMATDESC
+udaTextureAddressMode, CPP_UDATEXTUREADDRESSMODE
 %%
 int
 cpp_reserved_word(const char *str, int len)
